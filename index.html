@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rehman | Front-End Developer</title>
+    <link rel="icon" type="image/png" href="https://ui-avatars.com/api/?name=A+R&background=5b4e96&color=fff&bold=true&rounded=true&size=512">
+
+    <!-- Fonts: Baloo Bhai 2 (headings) + Open Sans (text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+    <link rel="stylesheet" href="input.css">
+    <!-- Tailwind CSS (CDN, no build step needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="java.js"></script>
+
+</head>
+
+<body class="bg-white antialiased text-base 2xl:text-lg ">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-30 bg-white/95 backdrop-blur shadow-sm ">
+        <nav class="relative mx-auto w-full max-w-6xl 2xl:max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between ">
+            <a href="#" class="font-display text-lg 2xl:text-xl font-bold brand ">Abdul Rehman</a>
+
+            <input id="menu-toggle" type="checkbox" class="peer sr-only md:hidden" aria-controls="primary-navigation">
+            <label for="menu-toggle" class="burger peer-focus-visible:ring-2 peer-focus-visible:ring-[var(--brand)] md:hidden cursor-pointer rounded p-2" aria-label="Toggle navigation menu">
+                <span class="block w-6 h-0.5 bg-slate-600 mb-1.5 "></span>
+                <span class="block w-6 h-0.5 bg-slate-600 mb-1.5 "></span>
+                <span class="block w-6 h-0.5 bg-slate-600 "></span>
+            </label>
+
+            <ul id="primary-navigation" class="hidden peer-checked:flex absolute left-0 right-0 top-full flex-col items-center gap-5 bg-white shadow-md py-6 text-xs font-semibold md:static md:flex md:flex-row md:gap-6 md:shadow-none md:py-0 md:bg-transparent ">
+                <li><a href="#" class="nav-link ">Home</a></li>
+                <li><a href="#about" class="nav-link ">About</a></li>
+                <li><a href="#services" class="nav-link ">Service</a></li>
+                <li><a href="#portfolio" class="nav-link ">Portfolio</a></li>
+                <li><a href="#testimonial" class="nav-link ">Testimonial</a></li>
+                <li><a href="#blog" class="nav-link ">Blog</a></li>
+                <li><a href="#contacts" class="nav-link ">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO: soft gradient with floating shapes ===== -->
+        <section id="home" class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-white px-4 py-20 sm:px-6 sm:py-28 lg:px-8 2xl:py-40">
+            <div aria-hidden="true" class="pointer-events-none absolute -left-[10%] -top-[10%] h-[40%] w-[40%] rounded-full bg-purple-600/40 blur-[120px] animate-breathe-slow">
+            </div>
+            <div aria-hidden="true" class="pointer-events-none absolute -bottom-[10%] -right-[20%] h-[50%] w-[50%] rounded-full bg-cyan-500/30 blur-[120px] animate-breathe-slower [animation-delay:2s]">
+            </div>
+
+            <div class="relative z-10 mx-auto max-w-3xl text-center 2xl:max-w-5xl">
+                <p class="fade-up d1 text-sm tracking-wide brand sm:text-base">Hello, I'm</p>
+                <h1 class="fade-up d2 mt-1 font-display text-5xl font-extrabold leading-none text-slate-900 sm:text-7xl 2xl:text-8xl">
+                    Abdul Rehman</h1>
+                <p class="fade-up d3 mx-auto mt-5 max-w-xl text-base leading-relaxed text-slate-600 sm:text-xl 2xl:max-w-2xl 2xl:text-2xl">
+                    Web designer &amp; developer building simple, fast websites for small businesses and creators.
+                </p>
+                <div class="fade-up d4 mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <a href="#portfolio" class="btn-brand-primary w-full rounded-full px-8 py-3 font-semibold text-white transition-all duration-300 ease-in-out hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-purple-400 active:scale-95 sm:w-auto">View
+                        my work</a>
+                    <a href="#contacts" class="btn-brand-hover w-full rounded-full border border-[var(--brand)] bg-transparent px-8 py-3 font-semibold text-[var(--brand)] transition-all duration-300 ease-in-out hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-purple-400  active:scale-95 sm:w-auto">Contact
+                        me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT: image left, text right ===== -->
+        <section id="about" class="px-4 sm:px-6 lg:px-8 py-16 sm:py-24 2xl:py-32 ">
+            <div class="mx-auto w-full max-w-5xl 2xl:max-w-6xl grid md:grid-cols-2 gap-10 lg:gap-16 items-center ">
+
+                <div class="reveal-left mx-auto w-full max-w-xs sm:max-w-sm 2xl:max-w-md ">
+                    <!-- Replace this SVG with: <img src="your-photo.png " alt="Your name "> -->
+                    <img src="Ab.png " alt="Abdul Rehman " class="w-full h-auto ">
+                </div>
+
+                <div class="reveal-right text-center md:text-left ">
+                    <p class="text-slate-500 tracking-wide ">Who Am I ?</p>
+                    <h2 class="font-display text-4xl 2xl:text-5xl font-bold brand ">About Me</h2>
+                    <p class="mt-5 leading-relaxed ">
+                        I'm Abdul Rehman, a front-end developer and software developer. I build clean, responsive websites that load quickly and look good on any device.
+                    </p>
+                    <p class="mt-3 leading-relaxed ">
+                        I'm also a Software Engineering student, always learning new tools and ways to build better websites.
+                    </p>
+                    <a href="Abdul-Rehman CV.pdf" download class="btn-outline inline-block mt-7 px-6 py-2.5 rounded-full ">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!--  SERVICE: tinted background, cards reveal text on hover  -->
+        <section id="services" class="bg-[var(--tint)] px-4 sm:px-6 lg:px-8 py-16 sm:py-24 2xl:py-32 ">
+            <div class="mx-auto w-full max-w-6xl 2xl:max-w-7xl text-center ">
+                <p class="reveal text-slate-500 tracking-wide ">What I Do ?</p>
+                <h2 class="reveal font-display text-4xl 2xl:text-5xl font-bold brand ">Service</h2>
+
+                <div class="mt-12 grid gap-6 2xl:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+
+                    <div class="reveal-zoom service-card bg-white border border-slate-200 rounded p-7 2xl:p-9 " tabindex="0 ">
+                        <svg class="service-icon mx-auto w-14 h-14 text-slate-700 " viewBox="0 0 48 48 " fill="none " stroke="currentColor " stroke-width="2 " stroke-linecap="round " stroke-linejoin="round ">
+                            <path d="M10 18h22v20a4 4 0 0 1-4 4H14a4
+    4 0 0 1-4-4V18Z " />
+                            <path d="M32 22h3a4 4 0 0 1 0 8h-3 " />
+                            <path d="M16 18V8l4-4 4 4v10M26 18V10 " />
+                        </svg>
+                        <h3 class="font-display text-xl 2xl:text-2xl font-bold brand mt-3 ">Design</h3>
+                        <p class="desc text-sm 2xl:text-base mt-2 ">Layouts and visual design for landing pages, portfolios and small business sites.</p>
+                    </div>
+
+                    <div class="reveal-zoom service-card bg-white border border-slate-200 rounded p-7 2xl:p-9 " tabindex="0 ">
+                        <svg class="service-icon mx-auto w-14 h-14 text-slate-700 " viewBox="0 0 48 48 " fill="none " stroke="currentColor " stroke-width="2 " stroke-linecap="round " stroke-linejoin="round ">
+                            <rect x="12 " y="6 " width="30 " height="22
+    " rx="2 " />
+                            <path d="M22 38h10M27 28v10 " />
+                            <rect x="5 " y="22 " width="12 " height="20 " rx="2 " />
+                        </svg>
+                        <h3 class="font-display text-xl 2xl:text-2xl font-bold brand mt-3 ">Development</h3>
+                        <p class="desc text-sm 2xl:text-base mt-2 ">Responsive HTML and CSS pages that work on phones, tablets and desktops.</p>
+                    </div>
+
+                    <div class="reveal-zoom service-card bg-white border border-slate-200 rounded p-7 2xl:p-9 " tabindex="0 ">
+                        <svg class="service-icon mx-auto w-14 h-14 text-slate-700 " viewBox="0 0 48 48 " fill="none " stroke="currentColor " stroke-width="2 " stroke-linecap="round " stroke-linejoin="round ">
+                            <rect x="5 " y="16 " width="38 " height="26
+    " rx="3 " />
+                            <path d="M17 16v-5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5M5 28h38 " />
+                        </svg>
+                        <h3 class="font-display text-xl 2xl:text-2xl font-bold brand mt-3 ">Maintenance</h3>
+                        <p class="desc text-sm 2xl:text-base mt-2 ">Fixes, new sections and content changes for websites you already have.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PORTFOLIO: image tiles with hover overlay ===== -->
+        <section id="portfolio" class="px-4 sm:px-6 lg:px-8 py-16 sm:py-24 2xl:py-32 ">
+            <div class="mx-auto w-full max-w-6xl 2xl:max-w-7xl text-center ">
+                <p class="reveal text-slate-500 tracking-wide ">My Work</p>
+                <h2 class="reveal font-display text-4xl 2xl:text-5xl font-bold brand ">Portfolio</h2>
+
+                <div class="mt-12 grid gap-6 2xl:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+
+                    <!-- Replace each .art block with an <img class="art w-full h-full object-cover "> -->
+                    <a href="https://abdulrehman22-47.github.io/second-tailwind-project/" target="_blank" rel="noopener" class="reveal tile relative flex aspect-square items-center justify-center overflow-hidden rounded-lg border border-slate-100 bg-white p-4 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+                        <img src="chef-kitchen.png" alt="Chef's Kitchen website screenshot" class="h-full w-full object-contain object-center">
+                        <div class="overlay absolute inset-0 flex flex-col items-center justify-center">
+                            <h3 class="font-display text-2xl font-bold brand">Chef's Kitchen</h3>
+                            <p class="mt-1 text-slate-800">Category: Tailwind Project</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="reveal tile relative block aspect-square overflow-hidden bg-slate-200 ">
+                        <div class="art absolute inset-0 bg-gradient-to-br from-[#d9d2f2] to-[#a999e0] ">
+                            <img src="https://preview.themewagon.com/meyawo/assets/imgs/folio-1.jpg " alt="Web Designing " class="w-full h-full object-cover ">
+                        </div>
+                        <div class="overlay absolute inset-0 flex flex-col items-center justify-center ">
+                            <h3 class="font-display text-2xl font-bold brand ">Web Designing</h3>
+                            <p class="text-slate-800 mt-1 ">Category: Web Templates</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="reveal tile relative block aspect-square overflow-hidden bg-slate-200 sm:col-span-2 sm:mx-auto sm:w-1/2 lg:col-span-1 lg:w-full ">
+                        <div class="art absolute inset-0 bg-gradient-to-br from-[#d9d2f2] to-[#a999e0] ">
+                            <img src="https://preview.themewagon.com/meyawo/assets/imgs/folio-3.jpg " alt="Web Designing " class="w-full h-full object-cover ">
+
+                        </div>
+                        <div class="overlay absolute inset-0 flex flex-col items-center justify-center ">
+                            <h3 class="font-display text-2xl font-bold brand ">Brand Kit</h3>
+                            <p class="text-slate-800 mt-1 ">Category: Branding</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HIRE ME BANNER: animated gradient  -->
+        <section class="banner px-4 sm:px-6 lg:px-8 py-12 2xl:py-16 text-white ">
+            <div class="mx-auto w-full max-w-4xl 2xl:max-w-5xl flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left ">
+                <div class="reveal-left ">
+                    <h2 class="font-display text-2xl sm:text-3xl 2xl:text-4xl font-bold ">Have a project in mind?</h2>
+                    <p class="mt-1 text-white/85 ">Let’s discuss how I can help bring it to life.</p>
+                </div>
+                <a href="https://wa.me/923297804647?text=Hi%20Abdul%20Rehman%2C%20I%20would%20like%20to%20discuss%20a%20job%20or%20project%20opportunity%20with%20you." target="_blank " rel="noopener " class="hire-cta reveal-right group inline-flex items-center justify-center
+                    rounded-full px-10 py-3 font-display text-lg font-bold transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/70 active:scale-95 ">
+                    Hire Me
+                    <i aria-hidden="true " class="fa-solid fa-paper-plane ml-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-1 "></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL: cards with avatar on the edge  -->
+        <section id="testimonial " class="bg-[var(--tint)] px-4 sm:px-6 lg:px-8 py-16 sm:py-24 2xl:py-32 ">
+            <div class="mx-auto w-full max-w-5xl 2xl:max-w-6xl text-center ">
+                <p class="reveal text-slate-500 tracking-wide ">What Think Client About Me ?</p>
+                <h2 class="reveal font-display text-4xl 2xl:text-5xl font-bold brand ">Testimonial</h2>
+
+                <div class="mt-14 grid gap-12 md:gap-8 md:grid-cols-2 ">
+
+                    <figure class="reveal-left quote relative bg-white border border-slate-200 rounded text-left p-6 pt-12 sm:pl-24 sm:pt-6 ">
+                        <div class="avatar absolute -top-8 left-1/2 -translate-x-1/2 sm:top-1/2 sm:left-0 sm:-translate-y-1/2 sm:-translate-x-1/2 w-20 h-20 rounded-full bg-[#dfe3ea] ring-4 ring-white overflow-hidden ">
+                            <img src="https://preview.themewagon.com/meyawo/assets/imgs/avatar2.jpg " alt="Client avatar " class="w-full h-full object-cover ">
+                        </div>
+                        <blockquote class="leading-relaxed ">Working together was easy from start to finish. The site was delivered on time and looks great on every device.</blockquote>
+                        <figcaption class="font-display text-lg font-bold brand mt-3 ">Emily Reb</figcaption>
+                    </figure>
+
+                    <figure class="reveal-right quote relative bg-white border border-slate-200 rounded text-left p-6 pt-12 sm:pl-24 sm:pt-6 ">
+                        <div class="avatar absolute -top-8 left-1/2 -translate-x-1/2 sm:top-1/2 sm:left-0 sm:-translate-y-1/2 sm:-translate-x-1/2 w-20 h-20 rounded-full bg-[#c5e6e8] ring-4 ring-white overflow-hidden ">
+                            <img src="https://preview.themewagon.com/meyawo/assets/imgs/avatar3.jpg " alt="Client avatar " class="w-full h-full object-cover ">
+                        </div>
+                        <blockquote class="leading-relaxed ">Clear communication and a very clean design. My customers now find everything they need in seconds.</blockquote>
+                        <figcaption class="font-display text-lg font-bold brand mt-3 ">Sara Khan</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+
+        <!--  BLOG: horizontal card -->
+        <section id="blog " class="px-4 sm:px-6 lg:px-8 py-16 sm:py-24 2xl:py-32 ">
+            <div class="mx-auto w-full max-w-5xl 2xl:max-w-6xl text-center ">
+                <p class="reveal text-slate-500 tracking-wide ">Recent Posts?</p>
+                <h2 class="reveal font-display text-4xl 2xl:text-5xl font-bold brand ">Blog</h2>
+
+                <article class="reveal post mt-12 grid md:grid-cols-[2fr_3fr] border border-slate-200 text-left overflow-hidden hover:shadow-xl transition-shadow duration-300 ">
+                    <div class="relative overflow-hidden min-h-[12rem] bg-slate-200 ">
+                        <div class="relative overflow-hidden min-h-[20rem] bg-slate-200 ">
+                            <img src="https://preview.themewagon.com/meyawo/assets/imgs/img-2.jpg " alt="Blog post cover " class="art absolute inset-0 w-full h-full object-cover ">
+                        </div>
+                    </div>
+
+                    <div class="p-6 sm:p-8 ">
+                        <h3 class="font-display text-2xl font-bold brand ">Consectetur adipisicing elit</h3>
+                        <p class="mt-3 text-sm font-semibold text-slate-500 flex flex-wrap items-center gap-x-4 gap-y-1 ">
+                            <span>By: Admin</span>
+                            <span class="inline-flex items-center gap-1.5 "><svg class="w-4 h-4 text-pink-500 "
+                                    viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2 ">
+                                    <path d="M12 21s-8-5.2-8-11a5 5 0 0 1 8-3.8A5 5 0 0 1 20 10c0 5.800-8 11-8 11Z " />
+                                </svg>234</span>
+                            <span class="inline-flex items-center gap-1.5 "><svg class="w-4 h-4 " viewBox="0 0 24 24 "
+                                    fill="none " stroke="currentColor " stroke-width="2 ">
+                                    <path d="M4 5h16v11H9l-5 4V5Z " />
+                                </svg>123</span>
+                        </p>
+                        <p class="mt-4 leading-relaxed ">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis accusantium neque numquam mollitia modi quasi distinctio.
+                        </p>
+                        <p class="mt-3 font-semibold text-slate-800 ">Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</p>
+                        <a href="# " class="more inline-flex items-center gap-1 mt-5 text-sm brand font-semibold ">
+                            Read more
+                            <svg class="w-4 h-4 " viewBox="0 0 24 24 " fill="none " stroke="currentColor "
+                                stroke-width="2 " stroke-linecap="round " stroke-linejoin="round ">
+                                <path d="m7 6 6 6-6 6M13 6l6 6-6 6 " />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contacts " class=" bg-[var(--tint)] px-4 sm:px-6 lg:px-8 py-16 sm:py-24 2xl:py-32 ">
+            <div class="mx-auto w-full max-w-xl 2xl:max-w-2xl text-center ">
+                <p class="reveal text-slate-500 tracking-wide ">Get In Touch</p>
+                <h2 class="reveal font-display text-4xl 2xl:text-5xl font-bold brand ">Contact</h2>
+                <form id="contactForm" action="https://formsubmit.co/abdulrehman.046.47@gmail.com" method="POST" class="reveal mt-10 text-left bg-white p-8 rounded-lg shadow-sm border border-slate-100">
+                    <div class="mb-4">
+                        <label for="contact-name" class="block text-slate-700 font-medium mb-2">Name</label>
+                        <input id="contact-name" type="text" name="name" required placeholder="Enter your name" class="w-full px-4 py-2 border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6b4c9a] bg-slate-50">
+                    </div>
+                    <div class="mb-4">
+                        <label for="contact-email" class="block text-slate-700 font-medium mb-2">Email</label>
+                        <input id="contact-email" type="email" name="email" required placeholder="Enter your email" class="w-full px-4 py-2 border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6b4c9a] bg-slate-50">
+                    </div>
+                    <div class="mb-6">
+                        <label for="contact-message" class="block text-slate-700 font-medium mb-2">Message</label>
+                        <textarea id="contact-message" name="message" rows="4" required placeholder="Enter your message" class="w-full px-4 py-2 border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6b4c9a] bg-slate-50 resize-none"></textarea>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <button id="submitBtn" type="submit" class="w-full sm:w-auto bg-[#5b4e96] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4a3f7c] transition-all duration-300 shadow-md hover:shadow-lg focus:ring-4 focus:ring-purple-200 active:scale-95">
+                        Send message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <div id="successPopup" role="status" aria-live="polite" class="fixed bottom-5 right-5 z-50 flex translate-y-20 pointer-events-none items-center gap-4 rounded-r-xl rounded-l-sm border-l-4 border-[#5b4e96] bg-white px-6 py-4 text-slate-700 opacity-0 shadow-[0_10px_40px_-15px_rgba(91,78,150,0.4)] transition-all duration-500">
+            <div class="flex-shrink-0 rounded-full bg-purple-100 p-2">
+                <svg class="h-5 w-5 text-[#5b4e96]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            <div>
+                <h4 id="contactPopupTitle" class="text-base font-bold text-slate-800">Success!</h4>
+                <p id="contactPopupMessage" class="mt-0.5 text-sm font-medium text-slate-500">Your message has been sent.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!--FOOTER: round social -->
+    <footer class="border-t border-slate-200 bg-white px-4 sm:px-6 lg:px-8 py-6 ">
+        <div class="mx-auto w-full max-w-6xl 2xl:max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left ">
+            <p class="text-slate-500 tracking-wide text-sm ">Copyright 2026 © Abdul Rehman</p>
+
+            <ul class="flex flex-wrap justify-center gap-2 ">
+                <li><a href="# " aria-label="Facebook " class="social w-10 h-10 rounded-full border-2 flex items-center justify-center text-base "><i
+                            aria-hidden="true " class="fab fa-facebook-f "></i></a></li>
+                <li><a href="# " aria-label="Twitter " class="social w-10 h-10 rounded-full border-2 flex items-center justify-center text-base "><i
+                            aria-hidden="true " class="fab fa-twitter "></i></a></li>
+                <li><a href="# " aria-label="Google Plus " class="social w-10 h-10 rounded-full border-2 flex items-center justify-center text-base "><i
+                            aria-hidden="true " class="fab fa-google-plus-g "></i></a></li>
+                <li><a href="# " aria-label="Pinterest " class="social w-10 h-10 rounded-full border-2 flex items-center justify-center text-base "><i
+                            aria-hidden="true " class="fab fa-pinterest-p "></i></a></li>
+                <li><a href="# " aria-label="Instagram " class="social w-10 h-10 rounded-full border-2 flex items-center justify-center text-base "><i
+                            aria-hidden="true " class="fab fa-instagram "></i></a></li>
+                <li><a href="# " aria-label="TikTok " class="social w-10 h-10 rounded-full border-2 flex items-center justify-center text-base "><i
+                            aria-hidden="true " class="fab fa-tiktok "></i></a></li>
+                <li><a href="# " aria-label="RSS " class="social w-10 h-10 rounded-full border-2 flex items-center justify-center text-base "><i
+                            aria-hidden="true " class="fas fa-rss "></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
