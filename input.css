@@ -237,10 +237,10 @@
 
         .btn-brand-hover:hover,
         .btn-brand-hover:focus-visible {
-            background: #fff;
+            background: linear-gradient(120deg, #8068c5, #5b4e96 58%, #493d7b);
             border-color: var(--brand);
-            color: var(--brand);
-            box-shadow: 0 6px 16px rgba(107, 90, 166, .12);
+            color: #fff;
+            box-shadow: 0 12px 26px -8px rgba(91, 78, 150, .65), 0 0 0 4px rgba(91, 78, 150, .12);
         }
         
         .btn-outline {
